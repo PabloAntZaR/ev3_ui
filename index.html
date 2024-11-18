@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PabloAntZaR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--PZ: Aquí estaría "normalmente" el CSS (style) , pero me fué más fácil utilizar el archivo aparte con split por lo largo del código-->
+<body>
+    <header>
+        <a href="#home"><img src="/assets/img/logo.PNG" alt="logo PabloAntZaR"> </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#presentacion">Quién es?</a></li>
+                <li><a href="#proyectos">Competencias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#extra">Agradecimientos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="home">
+        <img src="/assets/img/img_principal.PNG" alt="Imagen gatito programando" class="img-principal">
+        <main class="home-content">
+            <h1> Pablo AntZaR</h1>
+            <p class="slogan">Desarrollador en Evolución</p>
+        </main>
+    </section>
+
+    <section id="presentacion" class="presentacion"> 
+        <div class="text-content"> 
+            <h2>Pablo Antonio Zapata Reiman</h2> 
+            <p>Estudiante de Técnico de nivel superior (TNS) Analista Programador en el Instituto Profesional Virginio Gómez.</p> 
+            <h3>Experiencias y habilidades:</h3>
+            <ul>
+                <li><strong>Programador:</strong> diversos lenguajes tales como C#, HTML y CSS, con capacidad para desarrollar todo tipo de aplicaciones, desde videojuegos hasta aplicaciones web.</li>
+                <li><strong>Análisis y Diseño de Sistemas:</strong> Experto en modelamiento de información con orientación a objetos, transformando requerimientos complejos en soluciones eficientes y escalables.</li>
+                <li><strong>Músico Aficionado:</strong> Habilidades en guitarras clásica, acústica y eléctrica, y voz principal en MadMusic.</li>
+            </ul>
+        </div> 
+        <picture class="image-content"> 
+            <img src="/assets/img/pablo.PNG" alt="fotografía de pablo zapata"> 
+        </picture> 
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <h2>Competencias (Skills)</h2>
+        <div class="proyecto-contenedor">
+            <div class="proyecto">
+                <img src="/assets/img/cSharp.jpeg" alt="Imagen de código de programación">
+                <p>Programador con experiencia en el desarrollo de una amplia gama de aplicaciones. Desde videojuegos inmersivos hasta aplicaciones web robustas y dinámicas, mi objetivo es crear soluciones innovadoras y eficientes.</p>
+            </div>
+            <div class="proyecto">
+                <img src="/assets/img/sistemas.PNG" alt="imagen análisis de sistemas">
+                <p>Mi enfoque en el diseño de sistemas garantiza arquitecturas robustas y bien estructuradas, mientras que mi habilidad para modelar información asegura la integridad y la coherencia de los datos. Comprometido con la excelencia, la optimización, el rendimiento y la mantenibilidad de los sistemas.</p>
+            </div>
+            <div class="proyecto">
+                <img src="/assets/img/musica.PNG" alt="imagen pablo tocando guitarra">
+                <p>A través de mi experiencia con MadMusic, he desarrollado una profunda comprensión de la teoría musical y una habilidad única para conectar emocionalmente con la audiencia. Mi objetivo es crear una experiencia musical enriquecedora y memorable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+
+        <form target="_blank" action="https://aterbonus.dev/api/toys/forms" method="post">
+            <label>Nombre:
+                <input type="text" name="name" required maxlength="200">
+            </label>
+            <label>Correo Electrónico:
+                <input type="email" name="email" required placeholder="email@email.com">
+            </label>
+            <label>Asunto:
+                <input type="text" name="subject" required maxlength="200">
+            </label>
+            <label>Comentario:
+                <textarea name="content" required maxlength="1000"></textarea>
+            </label>
+            <input type="hidden" name="password" value="TrabajoInterfazDeUsuario2024">
+            <button>Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </section>
+
+    <!--La sección adicional podía ser un aside? o siempre es necesario que sea lateral?-->
+    <section id="extra" class="extra">
+        <h2>Agradecimientos a:</h2>
+        
+        <div class="extra-contenedor">
+            <div class="extras">
+                <a href="https://code.visualstudio.com" target="_blank">
+                    <img src="/assets/img/Visual-studio.PNG" alt="logo visual studio">
+                </a>
+            </div>
+            <div class="extras">
+                <a href="https://github.com/" target="_blank">
+                    <img src="/assets/img/Git-hub.PNG" alt="logo git hub">
+                </a>
+            </div>
+            <div class="extras">
+                <a href="https://www.amd.com/es.html" target="_blank">
+                    <img src="/assets/img/amd.PNG"  alt="logo amd">
+                </a>
+            </div>
+            <div class="extras">
+                <a href="https://admision.virginiogomez.cl/" target="_blank">
+                    <img src="/assets/img/ipvg.PNG" alt="logo Instituto Profesional virginio gómez">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 PabloAntZaR.dev. - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
