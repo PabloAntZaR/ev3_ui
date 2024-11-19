@@ -102,10 +102,12 @@ a {
     .home {
        grid-template-columns: 1fr;
        grid-template-rows: 2;
+        background-color: rgb(35,35,33);
        
    } 
    .img-principal {
     grid-row-start: 2;
+       border:none;
     
    }
    .home-content {
