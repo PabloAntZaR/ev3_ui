@@ -11,6 +11,9 @@ body {
     background-color: #333333;
     color: white;
     padding-top: 60px;
+    background-image: url(./assets/img/c_fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 header {
@@ -64,6 +67,7 @@ nav ul li a:hover {
 }
 section, footer { 
     background-color: #444444;
+    opacity: 0.95;
     }
 
 h1 {
